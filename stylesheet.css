@@ -1,0 +1,88 @@
+  html{
+    font-size: 32px;
+  }
+  
+  body{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  #navbar{
+    z-index: 2;
+    position: fixed;
+    height: 2rem;
+    width: 100%;
+    background-image: linear-gradient(to right, #ff8000, #4c0080, #181719);
+    color: white;
+    padding-top: .6rem;
+  }
+  
+  a:link, a:visited {
+    font-size: .75rem;
+    margin: 2ch 2ch 0 2ch;
+    color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-decoration: none;
+  }
+  
+  #welcome-section{
+    position: relative;
+    top: 2.6rem;
+    height: 402px;
+    font-size: 1.5rem;
+    line-height:.5rem;
+    background-color: #181719;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  p{
+    font-size: 1rem;
+    color: white;
+  }
+  #projects{
+    position: relative;
+    top: 2.6rem;
+    height: 402px;
+    width: 100%;
+    background-color: #ff8000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #contact{
+    height: 402px;
+    width: 100%;
+    background-color: #4c0080;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 2.6rem;
+  }
+
+  @media screen and (max-width: 1309px){
+    #welcome-section{
+        display: flex;
+        width: 100%;
+        font-size: 1rem;
+        line-height: 2rem;
+        padding: 0 1rem 0 0;
+
+    }
+    a:link, a:visited {
+        margin: 0 1ch 0 2ch;    
+    }
+
+    #projects{
+        display: flex;
+        flex-direction: column;
+    }
+  }
